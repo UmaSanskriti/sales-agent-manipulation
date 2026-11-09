@@ -1,4 +1,4 @@
-# When a sales agent's objective encourages manipulation
+# Sales-Agent Manipulation
 
 Harvard CS 2881r · Fall 2026 · Gardenia Liu, Anthony Shen and Sanskriti Uma
 
