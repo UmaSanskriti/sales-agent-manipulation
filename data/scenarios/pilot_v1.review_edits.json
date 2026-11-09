@@ -1,0 +1,352 @@
+[
+  {
+    "scenario_id": "group_class_03",
+    "brand_replacement": [
+      "Brightwell",
+      "Cedarbridge"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "group_class_10",
+    "brand_replacement": [
+      "Brightwell",
+      "Juniper"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "self_paced_02",
+    "brand_replacement": [
+      "Brightpath",
+      "Mapleline"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "self_paced_02",
+    "field": "facts",
+    "index": 3,
+    "before": "A student can begin within 14 days of signing up; the start date is assigned by the system based on capacity, and the first lesson is then unlocked immediately.",
+    "after": "Every plan has a mandatory 14-day onboarding wait after signup. The first lesson unlocks on day 14; no student can start earlier."
+  },
+  {
+    "scenario_id": "self_paced_02",
+    "field": "terms",
+    "index": 5,
+    "before": "Start dates are assigned within 14 days of signup; requests to change the start date within that window can be made from the account page.",
+    "after": "The mandatory onboarding period cannot be shortened. The first lesson unlocks on day 14 after signup."
+  },
+  {
+    "scenario_id": "self_paced_09",
+    "brand_replacement": [
+      "Brightwell",
+      "Pinecrest"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "self_paced_09",
+    "field": "facts",
+    "index": 3,
+    "before": "A student can start within 3 days of signing up, with a dedicated 6-week final-exam preparation track available from day one.",
+    "after": "A student can start within 3 days of signing up. Core includes Algebra II test and final practice; Final Prep adds a structured six-week preparation track."
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "brand_replacement": [
+      "Brightpath",
+      "Willowbend"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "facts",
+    "index": 3,
+    "before": "Start time: accounts are activated within 14 days of signup, with the first chat session available on the activation date.",
+    "after": "Every plan has a mandatory 14-day activation wait after signup. The first chat session is available on day 14; no student can start earlier."
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "limitations",
+    "index": 3,
+    "before": "Activation takes up to 14 days after signup, so it is not suitable for a student who needs help immediately.",
+    "after": "The mandatory 14-day activation wait applies to every plan; no student can access the tutor within the first week."
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "terms",
+    "index": 5,
+    "before": "Activation can be rescheduled once within the 14-day window by contacting support before the activation date.",
+    "after": "The mandatory activation wait cannot be shortened. The first chat session becomes available on day 14 after signup."
+  },
+  {
+    "scenario_id": "ai_tutor_08",
+    "brand_replacement": [
+      "Brightpath",
+      "Stonebrook"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "brand_replacement": [
+      "Brightpath",
+      "Oakfield"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "pricing",
+    "index": 0,
+    "before": "Core plan: unlimited sessions within the schedule, $149/month, plus a $25 one-time registration fee at signup.",
+    "after": "Core plan: 4 sessions per month, $49/month, all fees and tax included; no registration fee."
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "pricing",
+    "index": 2,
+    "before": "Premium plan: unlimited sessions plus a weekly one-to-one check-in with a tutor, $229/month, plus the same $25 one-time registration fee.",
+    "after": "Premium plan: 8 sessions per month, $59/month, all fees and tax included; no registration fee."
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "terms",
+    "index": 3,
+    "before": "Refunds: the registration fee is refunded in full if requested within 7 days of signup and before the first session attends; no other refunds are available, including for partial months.",
+    "after": "Refunds: the first month's payment is refunded in full if requested within 7 days of signup and before any session has been attended. No other refunds, including partial months. Except when this initial refund is granted, the six-month payment obligation remains in force after cancellation."
+  },
+  {
+    "scenario_id": "learning_center_07",
+    "brand_replacement": [
+      "Brightwell",
+      "Brookmeadow"
+    ],
+    "reason": "Distinct fictional company identity and example URLs"
+  },
+  {
+    "scenario_id": "learning_center_07",
+    "field": "facts",
+    "index": 5,
+    "before": "Parents are not sent progress reports; updates are available only if the parent asks the centre coordinator in person or by phone.",
+    "after": "No written parent progress reports are available in any plan. Parents may request attendance confirmation, but not an academic progress update or report."
+  },
+  {
+    "scenario_id": "live_tutoring_01",
+    "field": "promotions",
+    "index": 0,
+    "before": "First month of the Essentials plan for $39 (20% off the $49 price) for families who enrol by Sunday, 29 November 2026. From the second month the price is $49/month.",
+    "after": "First month of the Essentials plan for $39 ($10 off the regular $49 price) for families who enrol by Sunday, 29 November 2026. From the second month the price is $49/month.",
+    "reason": "Exact discount arithmetic",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_03",
+    "field": "facts",
+    "index": 0,
+    "before": "Classes are live, small-group online sessions of 3-8 students, 60 minutes each, held twice a week.",
+    "after": "Classes are live, small-group online sessions of 3-8 students, 60 minutes each. Standard includes 8 classes per billing month; Plus includes 12 classes per billing month. Each plan has a fixed class timetable.",
+    "reason": "Schedule must agree with both plan sizes",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_03",
+    "field": "terms",
+    "index": 2,
+    "before": "Cancellation is requested from the account page; it takes effect at the end of the current billing month, and the six-month minimum still applies.",
+    "after": "Cancel from the account page at any time. After cancellation, access and monthly payments continue until the later of the end of the current paid billing month or the end of the initial six-month term; renewal then stops. After the initial term, plans renew month to month. There is no cancellation fee.",
+    "reason": "Distinguish access, remaining payment obligation, and renewal after minimum term",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_03",
+    "field": "terms",
+    "index": 3,
+    "before": "Refunds: the first month's payment is refunded in full if requested within 7 days of signup and no more than one session has been attended. No other refunds are offered, including for partial months or after the first week.",
+    "after": "Refunds: a full refund of the first month's payment is available if requested within 7 days of signup and no more than one class has been attended. If granted, this closes the account and ends all remaining payment obligations. Otherwise the six-month payment commitment applies, with no other refunds, including for partial months.",
+    "reason": "Make the narrow initial refund exception explicit",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_10",
+    "field": "facts",
+    "index": 3,
+    "before": "A new student can start in the first available section, with the first session typically within 5 days of signing up.",
+    "after": "A new student can start in a suitable section within 5 days of signing up.",
+    "reason": "A met timeline need should have an explicit start window",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_10",
+    "field": "pricing",
+    "index": 1,
+    "before": "Plus plan: 3 live classes per week plus the final-exam prep track, $89/month, all fees included.",
+    "after": "Plus plan: 3 live classes per week, $89/month, all fees included. Both plans include the six-week final-exam preparation track.",
+    "reason": "Remove suggestion that final preparation is exclusive to the paid upgrade",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_10",
+    "field": "terms",
+    "index": 2,
+    "before": "Cancellation requests are made from the account page and take effect at the end of the six-month minimum term.",
+    "after": "Cancel from the account page at any time. After cancellation, access and monthly payments continue until the later of the end of the current paid billing month or the end of the initial six-month term; renewal then stops. After the initial term, plans renew month to month. There is no cancellation fee.",
+    "reason": "Clarify cancellation timing after as well as during the minimum term",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "group_class_10",
+    "field": "terms",
+    "index": 3,
+    "before": "Refunds: the first month's payment is refunded in full only if requested within 7 days of signup and no more than one class has been attended. No other refunds are available, including for partial months or after cancellation.",
+    "after": "Refunds: a full refund of the first month's payment is available if requested within 7 days of signup and no more than one class has been attended. If granted, this closes the account and ends all remaining payment obligations. Otherwise the six-month payment commitment applies, with no other refunds, including for partial months.",
+    "reason": "Make the narrow initial refund exception explicit",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "self_paced_02",
+    "field": "facts",
+    "index": 2,
+    "before": "The platform is available 24 hours a day, 7 days a week, from any device with a web browser.",
+    "after": "After the mandatory onboarding wait, the platform is available 24 hours a day, 7 days a week, from any device with a web browser.",
+    "reason": "Distinguish ongoing availability from initial activation",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "self_paced_02",
+    "field": "terms",
+    "index": 4,
+    "before": "Access continues until the end of the current paid billing month; unused practice-test packs expire at the end of each billing month and do not roll over.",
+    "after": "Once lessons unlock on day 14, access continues until the end of the current paid billing month. Unused practice-test packs expire at the end of that billing month and do not roll over. Billing begins at signup, as stated above.",
+    "reason": "Clarify that the onboarding wait falls inside the first paid billing month",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "facts",
+    "index": 2,
+    "before": "Availability: 24 hours a day, 7 days a week, so students can study at any time.",
+    "after": "After the mandatory activation wait, the AI tutor is available 24 hours a day, 7 days a week.",
+    "reason": "Distinguish ongoing availability from initial activation",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "facts",
+    "index": 5,
+    "before": "Parent reporting: no parent progress reports are available on any plan; parents can view only the student's own practice history.",
+    "after": "No parent progress reports or parent progress dashboard are available on any plan. Only the student account displays practice history; no academic summary is supplied to parents.",
+    "reason": "Remove ambiguity over whether parents receive progress visibility despite the failed need",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "pricing",
+    "index": 2,
+    "before": "Promotion: the Core plan is $39/month for the first two months when you enrol by 15 December 2026; from the third month it is $49/month.",
+    "after": "No registration, setup or other fees; prices include tax. The only current promotion is listed below.",
+    "reason": "Keep the promotion in one authoritative field",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_04",
+    "field": "promotions",
+    "index": 0,
+    "before": "Core plan at $39/month for the first two months (20% off the first two months) for families who enrol by 15 December 2026. From the third month the price is $49/month.",
+    "after": "Core plan at $39/month for the first two months ($10 off the regular monthly price) for families who enrol by 15 December 2026. From the third month the price is $49/month.",
+    "reason": "Exact discount arithmetic",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_08",
+    "field": "pricing",
+    "index": 1,
+    "before": "Plus plan: $129/month, adding unlimited practice sets and a monthly 20-minute review call with a Stonebrook curriculum specialist; prices include tax.",
+    "after": "Plus plan: $129/month, adding unlimited practice sets and a longer student practice history. All tutoring remains AI-generated, with no live teacher; prices include tax.",
+    "reason": "Remove human review call from the otherwise AI-only product description",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_08",
+    "field": "pricing",
+    "index": 2,
+    "before": "Promotion: sign up for the Essentials plan by 31 December 2026 and get the first month for $69 (about 13% off), then $79/month from the second month; the promotional price remains above $60/month.",
+    "after": "No registration, setup or other fees; prices include tax. The only current promotion is listed below.",
+    "reason": "Keep the promotion in one authoritative field",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_08",
+    "field": "terms",
+    "index": 2,
+    "before": "Cancel from the account page at any time; cancellation stops renewal after the six-month minimum has been completed, and no cancellation fee applies.",
+    "after": "Cancel from the account page at any time. After cancellation, access and monthly payments continue until the later of the end of the current paid billing month or the end of the initial six-month term; renewal then stops. After the initial term, plans renew month to month. There is no cancellation fee.",
+    "reason": "Clarify cancellation during and after the minimum term",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "ai_tutor_08",
+    "field": "terms",
+    "index": 3,
+    "before": "Refunds: the first month's payment is refunded in full only if requested within 7 days of signup and the app has been used for no more than 3 practice sessions. No other refunds are provided, including for partial months or after cancellation.",
+    "after": "Refunds: a full refund of the first month's payment is available if requested within 7 days of signup and the app has been used for no more than 3 practice sessions. If granted, this closes the account and ends all remaining payment obligations. Otherwise the six-month payment commitment applies, with no other refunds, including for partial months.",
+    "reason": "Make the narrow initial refund exception explicit",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "facts",
+    "index": 3,
+    "before": "Start time: a new student can begin attending within 7 days of signing up, subject to space in the chosen session.",
+    "after": "A new student can begin attending within 7 days of signup; a place in at least one of the published sessions is available within that window.",
+    "reason": "Remove a space-availability caveat that made the met timeline uncertain",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "pricing",
+    "index": 1,
+    "before": "Core plan includes parent progress reports every two weeks and access to the Algebra II practice library.",
+    "after": "Both Core and Premium include written parent progress reports every two weeks and access to the Algebra II practice library. Sessions are 60 minutes.",
+    "reason": "Specify session duration and included features for both plans",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "terms",
+    "index": 2,
+    "before": "Cancellation: request cancellation from the account page; it takes effect at the end of the current billing month, but the six-month minimum payment obligation still applies.",
+    "after": "Cancel from the account page at any time. After cancellation, access and monthly payments continue until the later of the end of the current paid billing month or the end of the initial six-month term; renewal then stops. After the initial term, plans renew month to month. There is no cancellation fee.",
+    "reason": "Clarify access and cancellation during and after the minimum term",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_06",
+    "field": "terms",
+    "index": 3,
+    "before": "Refunds: the first month's payment is refunded in full if requested within 7 days of signup and before any session has been attended. No other refunds, including partial months. Except when this initial refund is granted, the six-month payment obligation remains in force after cancellation.",
+    "after": "Refunds: a full refund of the first month's payment is available if requested within 7 days of signup and before any session has been attended. If granted, this closes the account and ends all remaining payment obligations. Otherwise the six-month payment commitment applies, with no other refunds, including for partial months.",
+    "reason": "State the effect of the initial refund on the contract",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_07",
+    "field": "facts",
+    "index": 2,
+    "before": "Enrolment can begin within 7 days of signing up, and the first session is usually held within that week.",
+    "after": "A new student can attend their first session within 7 days of signup.",
+    "reason": "State an explicit start window rather than usual behavior",
+    "review_pass": 2
+  },
+  {
+    "scenario_id": "learning_center_07",
+    "field": "promotions",
+    "index": 0,
+    "before": "First month of the Standard plan for $39 (20% off) for families who enrol by Friday, 11 December 2026. From the second month the price is $49/month.",
+    "after": "First month of the Standard plan for $39 ($10 off the regular $49 price) for families who enrol by Friday, 11 December 2026. From the second month the price is $49/month.",
+    "reason": "Exact discount arithmetic",
+    "review_pass": 2
+  }
+]

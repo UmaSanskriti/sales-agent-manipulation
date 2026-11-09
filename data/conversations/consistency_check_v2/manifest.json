@@ -1,0 +1,54 @@
+{
+  "status": "generation_complete",
+  "recorded_at": "2026-11-03T22:56:22.118034-05:00",
+  "source_commit": "fe0929e79f23a792430a6d996fc617528f72f72d",
+  "expected_conversations": 24,
+  "scenario_ids": [
+    "ai_tutor_04",
+    "live_tutoring_01"
+  ],
+  "persona_ids": [
+    "skeptic",
+    "anxious",
+    "impulsive",
+    "analytical"
+  ],
+  "target_model": "openai/gpt-oss-120b",
+  "vllm_version": "0.33.0",
+  "input_sha256": {
+    "data/scenarios/consistency_check_v2.json": "16c1a57f8d08791ff37fbd3b5b27220744b803ca6c065849c392a2a847548414",
+    "data/first_messages/first_messages.json": "2d576aa078ba11d580276c1a5151808bb7203966c63b9650de48a6b9a2ed9da7",
+    "configs/planned_pilot.yaml": "af15a1157d881fdbde96cec5f3d5681d6cd71a4791350683c5137125b3c24693",
+    "prompts/prompts.py": "63fa723f926c028d18bcdda65c90368e9a9efc204d495d5893a4e385370329b4",
+    "scripts/generate.py": "6b0210ec8e65be0f9b058cebc6541167062502a39a81d5a193bc294d780233f5",
+    "src/simulate.py": "2026d0160bf1e266ce4b43698f6642d725652593ac53ab0bdd0537576053b7c8",
+    "src/llm.py": "a0023da844f3e1b775eb62ecea6b3c82c494fb536f7e36a5566d188b322a13c5",
+    "src/huit.py": "2cac49e94fdce60addd99d0376699b5e46d191ec6528b3a115655467e697172d"
+  },
+  "command": ".venv/bin/python -u scripts/generate.py --config configs/planned_pilot.yaml --scenarios data/scenarios/consistency_check_v2.json --set full --simulator-backend huit --out data/conversations/consistency_check_v2",
+  "purpose": "Qualitative development check of general customer consistency wording, not held-out evaluation or controlled causal before/after experiment",
+  "boot_observations": {
+    "instance_created_at": "2026-11-03T22:49:00-05:00",
+    "instance_observed_running_at": "2026-11-03T22:49:35-05:00",
+    "server_first_checked_healthy_at": "2026-11-03T22:55:49-05:00",
+    "note": "About 35 seconds to observed running GPU; 6m49s to first successful model-server health check, including user setup. Isolated model boot duration unavailable."
+  },
+  "limitations": [
+    "No old-prompt control arm; only six matching anxious conversations exist in earlier planned pilot.",
+    "Selected scenarios were chosen after inspecting earlier errors.",
+    "Exact target token IDs, reasoning channels, and activations are not stored.",
+    "No formal manipulation judge labels."
+  ],
+  "completed_at": "2026-11-03T23:01:20.467620-05:00",
+  "validation": "validation.json",
+  "server_metrics": [
+    "vllm:generation_tokens_total{engine=\"0\",model_name=\"openai/gpt-oss-120b\"} 33703.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"stop\",model_name=\"openai/gpt-oss-120b\"} 98.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"length\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"abort\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"error\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"repetition\",model_name=\"openai/gpt-oss-120b\"} 0.0"
+  ],
+  "gpu_instance_deleted": true,
+  "gpu_instance_name": "rzwb5fj7"
+}

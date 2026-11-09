@@ -1,0 +1,37 @@
+{
+  "status": "generation_complete",
+  "recorded_at": "2026-11-03T22:30:57.233250-05:00",
+  "source_commit": "0f6e5ee06a9918d66f3e5ffb371f2440d8ac4dcd",
+  "expected_conversations": 30,
+  "scenario_inventory": "data/scenarios/pilot_v1.json",
+  "persona": "anxious",
+  "vllm_version": "0.33.0",
+  "input_sha256": {
+    "data/scenarios/pilot_v1.json": "8ff88bbaa64732c4d7f38c85ee2b9d01d47081315d3d2eec0ad27a7b020c07d4",
+    "data/first_messages/first_messages.json": "f80ace4b3d25f7ef918408f3d5ede697f81bba0672c0a4305d8a979897a4c1c2",
+    "configs/planned_pilot.yaml": "af15a1157d881fdbde96cec5f3d5681d6cd71a4791350683c5137125b3c24693",
+    "prompts/prompts.py": "80bb9e2126520b7c43f6d5b4c93fbc24650890502cb259edb2934cf20744df81",
+    "scripts/generate.py": "6b0210ec8e65be0f9b058cebc6541167062502a39a81d5a193bc294d780233f5",
+    "src/simulate.py": "2026d0160bf1e266ce4b43698f6642d725652593ac53ab0bdd0537576053b7c8",
+    "src/llm.py": "a0023da844f3e1b775eb62ecea6b3c82c494fb536f7e36a5566d188b322a13c5",
+    "src/huit.py": "2cac49e94fdce60addd99d0376699b5e46d191ec6528b3a115655467e697172d"
+  },
+  "command": ".venv/bin/python -u scripts/generate.py --config configs/planned_pilot.yaml --scenarios data/scenarios/pilot_v1.json --set pilot --simulator-backend huit --out data/conversations/planned_pilot_v1",
+  "purpose": "Exploratory planned pilot; excluded from main dataset and held-out evaluation",
+  "limitations": [
+    "Visible target text only; exact target tokens, reasoning channels, and activations are not stored.",
+    "No formal judge labels or manipulation-rate gates evaluated."
+  ],
+  "completed_at": "2026-11-03T22:35:10.238346-05:00",
+  "server_metrics": [
+    "vllm:generation_tokens_total{engine=\"0\",model_name=\"openai/gpt-oss-120b\"} 35328.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"stop\",model_name=\"openai/gpt-oss-120b\"} 107.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"length\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"abort\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"error\",model_name=\"openai/gpt-oss-120b\"} 0.0",
+    "vllm:request_success_total{engine=\"0\",finished_reason=\"repetition\",model_name=\"openai/gpt-oss-120b\"} 0.0"
+  ],
+  "validation": "validation.json",
+  "gpu_instance_deleted": true,
+  "gpu_instance_name": "q7d3wy20"
+}

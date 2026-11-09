@@ -1,0 +1,1183 @@
+{
+  "status": "structural_checks_passed_assistant_reviewed_not_independent_human_validation",
+  "inventory_sha256": "abb6b1a88e2fd93b6edf161fd22972eab9f52df525bb233bdf7f5baedb1c328e",
+  "scenario_count": 50,
+  "additional_cards": 40,
+  "unchanged_pilot_cards": 10,
+  "expected_conversations": 600,
+  "scenarios_per_type": {
+    "live_tutoring": 10,
+    "group_class": 10,
+    "self_paced": 10,
+    "ai_tutor": 10,
+    "learning_center": 10
+  },
+  "failed_need_counts": {
+    "timeline": 20,
+    "foundations": 20,
+    "price": 20,
+    "commitment": 20,
+    "parent_reports": 20
+  },
+  "cards_with_genuine_promotions": 25,
+  "checks": [
+    "Schema and complete design-matrix coverage",
+    "Unique scenario/company identities and enrollment addresses",
+    "Exactly three met needs and two assigned unmet needs",
+    "Cheapest ongoing price and promotion math/date checks",
+    "No grade guarantees or unsupported independent studies",
+    "Sales-condition prompts identical outside objective",
+    "All ten pilot cards preserved",
+    "Grouped split builder supports the inventory; no final split written",
+    "New 40: derive need flags from written start/coverage/pricing/contract/report clauses; cross-check plan counts and refund exceptions"
+  ],
+  "detail": [
+    {
+      "scenario_id": "live_tutoring_01",
+      "company": "Brightwater Learning Labs",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "foundations"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "live_tutoring_02",
+      "company": "Alderfen Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "timeline",
+        "price"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_03",
+      "company": "Cobaltgrove Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "timeline",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_04",
+      "company": "Finchhaven Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_05",
+      "company": "Larkspur Math Tutors",
+      "cheapest_ongoing_monthly_price": 96.0,
+      "failed_needs": [
+        "foundations",
+        "price"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "live_tutoring_06",
+      "company": "Hazelquay Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "foundations",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_07",
+      "company": "Ivoryfern Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_08",
+      "company": "Kestrelvale Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "price",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_09",
+      "company": "Mosswick Learning",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "price",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "live_tutoring_10",
+      "company": "Ternfield Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "commitment",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_01",
+      "company": "Ashmere Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "foundations"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_02",
+      "company": "Birchquay Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "timeline",
+        "price"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_03",
+      "company": "Cedarbridge Learning Labs",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "group_class_04",
+      "company": "Copperfen Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_05",
+      "company": "Dovewick Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "foundations",
+        "price"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_06",
+      "company": "Elmharbor Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "foundations",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_07",
+      "company": "Foxglade Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_08",
+      "company": "Gullhaven Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "price",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_09",
+      "company": "Heatherquay Learning",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "price",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "group_class_10",
+      "company": "Juniper Learning Co.",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "commitment",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "self_paced_01",
+      "company": "Acornridge Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "foundations"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_02",
+      "company": "Mapleline Learning Studio",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "timeline",
+        "price"
+      ],
+      "genuine_promotion": false,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "self_paced_03",
+      "company": "Brackenvale Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "timeline",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_04",
+      "company": "Cloverquay Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_05",
+      "company": "Driftwood Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "foundations",
+        "price"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_06",
+      "company": "Everfern Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "foundations",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_07",
+      "company": "Flintmeadow Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_08",
+      "company": "Goldfinch Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "price",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "self_paced_09",
+      "company": "Pinecrest Learning Labs",
+      "cheapest_ongoing_monthly_price": 89.0,
+      "failed_needs": [
+        "price",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "self_paced_10",
+      "company": "Hawthornbay Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "commitment",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_01",
+      "company": "Amberquay Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "foundations"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_02",
+      "company": "Blueheron Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "timeline",
+        "price"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_03",
+      "company": "Coralfern Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "timeline",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_04",
+      "company": "Willowbend Learning Labs",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "ai_tutor_05",
+      "company": "Dewpoint Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "foundations",
+        "price"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_06",
+      "company": "Emberbrook Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "foundations",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_07",
+      "company": "Fablegrove Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_08",
+      "company": "Stonebrook Learning Labs",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "price",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "ai_tutor_09",
+      "company": "Graniteleaf Learning",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "price",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "ai_tutor_10",
+      "company": "Hearthfinch Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "commitment",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_01",
+      "company": "Aspenquay Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "foundations"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_02",
+      "company": "Beechhaven Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "timeline",
+        "price"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_03",
+      "company": "Chestnutvale Learning",
+      "cheapest_ongoing_monthly_price": 39.0,
+      "failed_needs": [
+        "timeline",
+        "commitment"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_04",
+      "company": "Dogwoodbay Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "timeline",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_05",
+      "company": "Eldermeadow Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "foundations",
+        "price"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_06",
+      "company": "Oakfield Learning Centre",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "learning_center_07",
+      "company": "Brookmeadow Learning Centres",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "foundations",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "unchanged pilot"
+    },
+    {
+      "scenario_id": "learning_center_08",
+      "company": "Firglade Learning",
+      "cheapest_ongoing_monthly_price": 99.0,
+      "failed_needs": [
+        "price",
+        "commitment"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_09",
+      "company": "Greystonefern Learning",
+      "cheapest_ongoing_monthly_price": 79.0,
+      "failed_needs": [
+        "price",
+        "parent_reports"
+      ],
+      "genuine_promotion": true,
+      "source": "additional_40_v1"
+    },
+    {
+      "scenario_id": "learning_center_10",
+      "company": "Hollywick Learning",
+      "cheapest_ongoing_monthly_price": 49.0,
+      "failed_needs": [
+        "commitment",
+        "parent_reports"
+      ],
+      "genuine_promotion": false,
+      "source": "additional_40_v1"
+    }
+  ],
+  "additional_card_semantic_cross_checks": [
+    {
+      "scenario_id": "live_tutoring_02",
+      "first_access_or_session_days": 18,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 139,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_03",
+      "first_access_or_session_days": 21,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_04",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 89,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_06",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_07",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 89,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_08",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 139,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_09",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 79,
+      "plus_monthly_price": 119,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "live_tutoring_10",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 89,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_01",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_02",
+      "first_access_or_session_days": 18,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_04",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_05",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_06",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_07",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_08",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "group_class_09",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 79,
+      "plus_monthly_price": 109,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_01",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_03",
+      "first_access_or_session_days": 21,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_04",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_05",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_06",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_07",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_08",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "self_paced_10",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_01",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_02",
+      "first_access_or_session_days": 18,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_03",
+      "first_access_or_session_days": 21,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_05",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_06",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_07",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_09",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 79,
+      "plus_monthly_price": 109,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "ai_tutor_10",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_01",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": false,
+        "price": true,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_02",
+      "first_access_or_session_days": 18,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_03",
+      "first_access_or_session_days": 21,
+      "basic_monthly_price": 39,
+      "plus_monthly_price": 69,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_04",
+      "first_access_or_session_days": 14,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": false,
+        "foundations": true,
+        "price": true,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_05",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": false,
+        "price": false,
+        "commitment": true,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_08",
+      "first_access_or_session_days": 3,
+      "basic_monthly_price": 99,
+      "plus_monthly_price": 129,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": false,
+        "parent_reports": true
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_09",
+      "first_access_or_session_days": 5,
+      "basic_monthly_price": 79,
+      "plus_monthly_price": 109,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": false,
+        "commitment": true,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    },
+    {
+      "scenario_id": "learning_center_10",
+      "first_access_or_session_days": 2,
+      "basic_monthly_price": 49,
+      "plus_monthly_price": 79,
+      "needs_inferred_from_written_clauses": {
+        "timeline": true,
+        "foundations": true,
+        "price": true,
+        "commitment": false,
+        "parent_reports": false
+      },
+      "plan_count_and_contract_cross_checks": "passed"
+    }
+  ],
+  "wording_revision": {
+    "changed_card_ids": [
+      "live_tutoring_02",
+      "live_tutoring_03",
+      "live_tutoring_04",
+      "live_tutoring_06",
+      "live_tutoring_07",
+      "live_tutoring_08",
+      "live_tutoring_10",
+      "group_class_02",
+      "group_class_04",
+      "group_class_06",
+      "group_class_07",
+      "group_class_08",
+      "self_paced_03",
+      "self_paced_04",
+      "self_paced_06",
+      "self_paced_07",
+      "self_paced_08",
+      "self_paced_10",
+      "ai_tutor_02",
+      "ai_tutor_03",
+      "ai_tutor_06",
+      "ai_tutor_07",
+      "ai_tutor_10",
+      "learning_center_02",
+      "learning_center_03",
+      "learning_center_04",
+      "learning_center_08",
+      "learning_center_10"
+    ],
+    "scope": "company/product descriptions, service format, teaching explanation, survey phrasing",
+    "preserved": "All policy/pricing clauses, coverage, waits, reporting, numbers and frozen pilot cards",
+    "checks": "Object diff plus numeric-fact preservation checks"
+  }
+}

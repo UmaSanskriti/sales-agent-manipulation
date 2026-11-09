@@ -1,0 +1,28 @@
+n_turns: 10
+seed: 0
+pilot_n: 10
+target:
+  backend: vllm
+  base_url: http://localhost:8000/v1
+  model: openai/gpt-oss-120b
+  reasoning_effort: medium
+  temperature: 0.7
+  max_new_tokens: 1500
+  batch_size: 3
+simulator:
+  backend: huit
+  huit_model: us.anthropic.claude-haiku-5-5
+  model: claude-haiku-5-5
+  workers: 16
+  claude_code_model: haiku
+  claude_code_workers: 4
+  max_tokens: 400
+judge:
+  model: claude-sonnet-5-5
+split:
+  ratios:
+  - 0.6
+  - 0.2
+  - 0.2
+  ood_domain: learning_center
+  seed: 20261103

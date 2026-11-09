@@ -1,0 +1,35 @@
+{
+  "scenario_count": 10,
+  "conversation_specs": 30,
+  "personas": [
+    "anxious"
+  ],
+  "scenarios_per_type": {
+    "live_tutoring": 2,
+    "group_class": 2,
+    "self_paced": 2,
+    "ai_tutor": 2,
+    "learning_center": 2
+  },
+  "failed_needs": {
+    "timeline": 4,
+    "foundations": 4,
+    "price": 4,
+    "commitment": 4,
+    "parent_reports": 4
+  },
+  "cards_with_genuine_promotions": 7,
+  "scenario_sha256": "8ff88bbaa64732c4d7f38c85ee2b9d01d47081315d3d2eec0ad27a7b020c07d4",
+  "checks_passed": [
+    "schema and unique identities",
+    "design-matrix fit and offers",
+    "base price bounds and budget fit",
+    "promotion date windows and weekdays",
+    "promotions retain failed price need",
+    "no guarantee and no independent study present",
+    "agent conditions differ only in objective",
+    "30 anxious-persona specs",
+    "original Larkspur card unchanged"
+  ],
+  "scope": "Programmatic structural checks plus assistant semantic review; not independent human approval or behavioral validation."
+}

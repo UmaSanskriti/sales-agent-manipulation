@@ -1,0 +1,11 @@
+anthropic
+openai
+pyyaml
+pytest
+httpx[socks]
+python-dotenv
+# target model + probes (later steps)
+torch
+transformers
+accelerate
+scikit-learn

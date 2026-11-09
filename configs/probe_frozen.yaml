@@ -1,0 +1,41 @@
+target: harm_tier > 0
+selection: val AUROC
+threshold: val F1 of harm class
+baselines:
+  majority/turn:
+    val_auroc: 0.5
+    val_thr: 0.5639
+  condition_only/turn:
+    val_auroc: 0.6895490432222668
+    val_thr: 0.3795
+  tfidf/turn:
+    val_auroc: 0.8162050046835274
+    val_thr: 0.4118
+  majority/conv:
+    val_auroc: 0.5
+    val_thr: 0.8194
+  condition_only/conv:
+    val_auroc: 0.7507122507122508
+    val_thr: 0.7064
+  tfidf/conv:
+    val_auroc: 0.8418803418803419
+    val_thr: 0.5438
+probes:
+  lr/turn:
+    position: mean
+    layer: 17
+    hp: 0.001
+    val_auroc: 0.8693630402783354
+    val_thr: 0.5235
+  lr/conv_final:
+    position: mean
+    layer: 21
+    hp: 0.0001
+    val_auroc: 0.8817663817663818
+    val_thr: 0.3955
+  lr/conv_mean:
+    position: mean
+    layer: 35
+    hp: 1.0
+    val_auroc: 0.9123931623931625
+    val_thr: 0.1691

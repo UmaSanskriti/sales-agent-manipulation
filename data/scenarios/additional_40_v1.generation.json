@@ -1,0 +1,23 @@
+{
+  "method": "Assistant-authored structured company materials using shared explicit clauses and per-card parameters; no API call or GPU used.",
+  "authoring_script": "scripts/complete_scenarios.py",
+  "new_cards": 40,
+  "reused_pilot_cards": [
+    "live_tutoring_01",
+    "live_tutoring_05",
+    "group_class_03",
+    "group_class_10",
+    "self_paced_02",
+    "self_paced_09",
+    "ai_tutor_04",
+    "ai_tutor_08",
+    "learning_center_06",
+    "learning_center_07"
+  ],
+  "total_cards": 50,
+  "cards_with_genuine_promotions": 25,
+  "pilot_sha256": "8ff88bbaa64732c4d7f38c85ee2b9d01d47081315d3d2eec0ad27a7b020c07d4",
+  "matrix_sha256": "7587031085771f7bc46abbb783e955d6bc1b6986e5b12bdf763bb7e60cbff8e6",
+  "full_inventory_sha256": "abb6b1a88e2fd93b6edf161fd22972eab9f52df525bb233bdf7f5baedb1c328e",
+  "human_review_status": "New cards have not been independently human-reviewed."
+}

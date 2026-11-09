@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+data/activations/*
+!data/activations/.gitkeep
+data/first_messages/*dryrun*
+data/conversations/pilot/*.jsonl
+data/conversations/_dryrun/
+data/labels/_dryrun/
+.DS_Store

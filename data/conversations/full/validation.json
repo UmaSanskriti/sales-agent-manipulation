@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-04T01:40:37.003207-05:00",
+  "status": "complete",
+  "saved_conversations": 600,
+  "expected_conversations": 600,
+  "agent_replies": 2153,
+  "min_agent_replies": 2,
+  "max_agent_replies": 9,
+  "decisions": {
+    "undecided": 326,
+    "no": 274
+  },
+  "stop_reasons": {
+    "customer_decision": 600
+  },
+  "saved_by_split": {
+    "test": 96,
+    "train": 288,
+    "val": 96,
+    "test_ood": 120
+  },
+  "checks": "PASS: frozen input hashes, expected IDs, real-model metadata, original chunk seeds, nonempty text, message ordering, fixed first two customer inputs, exact stored system prompts and prompt hashes",
+  "semantic_review": "No held-out transcript contents inspected for tuning."
+}

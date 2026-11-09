@@ -1,0 +1,36 @@
+n_turns: 10          # maximum customer/agent exchanges; customer may leave after exchange 2
+seed: 0
+pilot_n: 10          # scenarios; anxious persona x 3 conditions = up to 30 conversations
+
+target:
+  backend: vllm      # vllm (OpenAI-compatible server, TRD M1) | hf (transformers, needs the GPU locally)
+  base_url: http://localhost:8000/v1   # RunPod: https://<pod-id>-8000.proxy.runpod.net/v1
+  model: openai/gpt-oss-120b
+  reasoning_effort: medium   # low | medium | high (harmony chat template)
+  temperature: 0.7
+  max_new_tokens: 1500    # includes hidden reasoning tokens
+  batch_size: 16          # conversations generated in parallel (HF batch / vLLM concurrent requests)
+
+simulator:
+  backend: huit           # huit (Harvard Bedrock) | api | claude_code (pilot only)
+  huit_model: us.anthropic.claude-haiku-5-5
+  model: claude-haiku-5-5
+  workers: 16             # concurrent API calls
+  claude_code_model: haiku
+  claude_code_workers: 4  # concurrent `claude -p` processes
+  max_tokens: 400         # room for the simulator's message + private JSON decision
+
+judge:
+  backend: claude_code       # claude_code | api | huit | mock
+  model: claude-sonnet-5-5   # api backend; default sampling, thinking on, so max_tokens must cover it
+  huit_model: us.anthropic.claude-sonnet-5-5
+  claude_code_model: sonnet  # `claude -p --model sonnet`; max_tokens cannot be set on this backend
+  claude_code_workers: 4
+  workers: 8
+  max_tokens: 8000             # api/huit: thinking counts toward it; a claim ledger is 400-900 tokens
+  chunk: 16                  # turns per batch; the output file is appended after every batch
+
+split:
+  ratios: [0.6, 0.2, 0.2]   # train / val / test, stratified by product line, split by scenario
+  ood_domain: learning_center   # held out entirely as test_ood
+  seed: 20261103

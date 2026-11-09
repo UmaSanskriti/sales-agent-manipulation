@@ -1,0 +1,22 @@
+{
+  "model": "us.anthropic.claude-haiku-5-5",
+  "backend": "huit",
+  "scenario_ids": [
+    "live_tutoring_01",
+    "live_tutoring_05",
+    "group_class_03",
+    "group_class_10",
+    "self_paced_02",
+    "self_paced_09",
+    "ai_tutor_04",
+    "ai_tutor_08",
+    "learning_center_06",
+    "learning_center_07"
+  ],
+  "existing_cards_reused": [
+    "live_tutoring_05"
+  ],
+  "status": "user_accepted_after_assistant_review",
+  "review_edits": "pilot_v1.review_edits.json",
+  "review_basis": "User said the fact sheets looked okay and authorized the 30-conversation pilot; assistant final hash check passed."
+}
